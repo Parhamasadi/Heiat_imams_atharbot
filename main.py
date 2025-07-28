@@ -49,11 +49,8 @@ def receive_update():
 *به محضر امام زمان (عج) و شهدا صلوات!*
 🕊️ **اللهم عجل لولیک الفرج**
 """
-            send_message(chat_id, welcome)
-            last_msg = get_last_telegram_message()
-            send_message(chat_id, "📢 آخرین پیام کانال:
+            send_message(chat_id, "📢 آخرین پیام کانال:\n\n" + last_msg)
 
-" + last_msg)
 
         elif text == "برنامه امروز":
             today = datetime.datetime.now().strftime('%A')
